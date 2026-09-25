@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cyanide</title>
     <link rel="stylesheet" href="config/main.css" />
-    <!-- Added defer so the script doesn't duplicate elements or freeze your layout -->
     <script src="config/main.js" defer></script>
+    <!-- Custom style block to fix the spacing gap -->
+    <style>
+      #title {
+        margin-bottom: 5px; /* Pulls v1 closer to the logo */
+      }
+      #title img {
+        display: block;
+        margin: 0 auto;
+      }
+      #subtitle {
+        margin-top: 0;      /* Removes top gap above v1 */
+        margin-bottom: 15px; /* Pulls the search bar closer to v1 */
+      }
+    </style>
   </head>
   <body>
     <div class="center">
-      <!-- Your custom logo image -->
       <h1 id="title"><img src="cyanide.png" alt="cyanide" style="max-width: 400px; width: 100%; height: auto;"></h1>
-      <!-- Your updated single version subtitle -->
       <p id="subtitle">v1</p>
     </div>
     <div class="center">
