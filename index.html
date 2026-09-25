@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cyanide</title>
     <link rel="stylesheet" href="config/main.css" />
-    <script src="config/main.js"></script>
+    <!-- Added defer so the script doesn't duplicate elements or freeze your layout -->
+    <script src="config/main.js" defer></script>
   </head>
-    <body> 
+  <body>
     <div class="center">
-      <!-- Point the image src to your newly uploaded filename -->
+      <!-- Your custom logo image -->
       <h1 id="title"><img src="cyanide.png" alt="cyanide" style="max-width: 400px; width: 100%; height: auto;"></h1>
+      <!-- Your updated single version subtitle -->
       <p id="subtitle">v1</p>
-    </div>
-
-    </div>
-      <p id="subtitle">v1</p>
-    </div>
     </div>
     <div class="center">
       <input type="text" id="searchInput" placeholder="Search games" />
     </div>
     <div id="gamesContainer"></div>
     <div class="footer">
-      <a style="font-weight: 700">a site by
-      </a><a style="font-weight: 700" class="link" href="https://dsc.gg">parcoil network</a>
+      <a style="font-weight: 700">a site by </a>
+      <a style="font-weight: 700" class="link" href="https://dsc.gg">parcoil network</a>
     </div>
   </body>
 </html>
-
